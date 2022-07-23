@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "declaration": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "incremental": true,
+        "jsx": "react-jsx",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "strict": true,
+        "outDir": "dist",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "target": "ES2020"
+    },
+    "include": [
+        "src/**/*",
+        "types/*",
+        "*"
+    ]
+}
