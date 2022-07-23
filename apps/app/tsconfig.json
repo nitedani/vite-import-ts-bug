@@ -1,29 +1,25 @@
 {
     "compilerOptions": {
-        "noImplicitAny": false,
-        "allowJs": true,
-        "allowSyntheticDefaultImports": true,
-        "baseUrl": ".",
-        "declaration": true,
-        "declarationMap": true,
-        "esModuleInterop": true,
-        "incremental": true,
-        "jsx": "react-jsx",
+        "strict": true,
+        "module": "ES2020",
+        "moduleResolution": "Node",
+        "target": "ES2017",
         "lib": [
             "DOM",
+            "DOM.Iterable",
             "ESNext"
         ],
-        "strict": true,
-        "outDir": "dist",
-        "module": "ESNext",
-        "moduleResolution": "Node",
+        "types": [
+            "vite/client"
+        ],
+        "jsx": "react-jsx",
         "skipLibCheck": true,
-        "sourceMap": true,
-        "target": "ES2020"
+        "esModuleInterop": true
     },
-    "include": [
-        "src/**/*",
-        "types/*",
-        "*"
-    ]
+    "ts-node": {
+        "transpileOnly": true,
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
 }
