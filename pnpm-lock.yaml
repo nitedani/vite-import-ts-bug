@@ -8,7 +8,7 @@ importers:
       '@types/node': ^18.0.5
       '@types/react': ^18.0.15
       '@types/react-dom': ^18.0.6
-      '@vitejs/plugin-react': ^2.0.0
+      '@vitejs/plugin-react': ^1.0.0
       cross-env: ^7.0.3
       express: ^4.18.1
       package: workspace:*
@@ -16,15 +16,15 @@ importers:
       react-dom: ^18.2.0
       ts-node: ^10.9.1
       typescript: ^4.7.4
-      vavite: 1.4.0
-      vite: 3.0.0
+      vavite: 1.3.x
+      vite: ^2.0.0
       vite-plugin-ssr: ^0.4.9
     dependencies:
       '@types/express': 4.17.13
       '@types/node': 18.0.6
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
-      '@vitejs/plugin-react': 2.0.0_vite@3.0.0
+      '@vitejs/plugin-react': 1.3.2
       cross-env: 7.0.3
       express: 4.18.1
       package: link:../../packages/package
@@ -32,9 +32,9 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       ts-node: 10.9.1_tdn3ypgnfy6bmey2q4hu5jonwi
       typescript: 4.7.4
-      vavite: 1.4.0_vite@3.0.0
-      vite: 3.0.0
-      vite-plugin-ssr: 0.4.11_vite@3.0.0
+      vavite: 1.3.3_vite@2.9.14
+      vite: 2.9.14
+      vite-plugin-ssr: 0.4.11_vite@2.9.14
 
   packages/package:
     specifiers:
@@ -389,6 +389,14 @@ packages:
       fastq: 1.13.0
     dev: false
 
+  /@rollup/pluginutils/4.2.1:
+    resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
+    engines: {node: '>= 8.0.0'}
+    dependencies:
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
+    dev: false
+
   /@tsconfig/node10/1.0.9:
     resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
     dev: false
@@ -449,6 +457,10 @@ packages:
     resolution: {integrity: sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==}
     dev: false
 
+  /@types/node/17.0.45:
+    resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
+    dev: false
+
   /@types/node/18.0.6:
     resolution: {integrity: sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==}
     dev: false
@@ -490,69 +502,67 @@ packages:
       '@types/node': 18.0.6
     dev: false
 
-  /@vavite/connect/1.4.0_vite@3.0.0:
-    resolution: {integrity: sha512-r+MdlgvtvFSUfQj+sFZyLgtTiwkwFQFCSFNvF6vWupNwEAMN0emm+SkPzmGn4sgSVhCw2EIdc7H9MCFFF9LXeg==}
+  /@vavite/connect/1.3.3_vite@2.9.14:
+    resolution: {integrity: sha512-73vqRNZAkCIoMekoPs/dBhhxfhNyS2NHqNgjyWb/0NPAaOYXVI7QcQHl4Ikhjrw41yeoLzu8W6jMDif7Qv0HVQ==}
     peerDependencies:
-      vite: '>=2.8.1'
+      vite: ^2.8.1
     dependencies:
-      '@types/node': 18.0.6
-      vite: 3.0.0
+      '@types/node': 17.0.45
+      vite: 2.9.14
     dev: false
 
-  /@vavite/expose-vite-dev-server/1.4.0_vite@3.0.0:
-    resolution: {integrity: sha512-I1mgWaMSclCZZ+7c0xhpdsOrBVmPdK+te1PsdaFPBQjUVNErvd44TWR5/9OA57ETRMq7lspT9MOxQ8gSWJhy9g==}
+  /@vavite/expose-vite-dev-server/1.3.3_vite@2.9.14:
+    resolution: {integrity: sha512-CMVJknzxaNuxBD1OGA18a78X3skqtKSez50zn7v0ShqjFsahYtXAh4vCOwYnfY8MPXsT+aHVi1zrt1oFzQQLkA==}
     peerDependencies:
-      vite: '>=2.8.1'
+      vite: ^2.8.1
     dependencies:
-      vite: 3.0.0
+      vite: 2.9.14
     dev: false
 
-  /@vavite/multibuild-cli/1.4.0_vite@3.0.0:
-    resolution: {integrity: sha512-Y3VTK6KUuXo0+UpQtou5/Klqil0PWA3b7Y+FJVZ9Hm7cn1cBufYQWkO/yHvlvEYEgOnWf/fb6deBcM5dBREHDQ==}
+  /@vavite/multibuild-cli/1.3.3_vite@2.9.14:
+    resolution: {integrity: sha512-ds3uTbUY+txHRYOoblGyBg+4clnjhaa+bowx0AKD6XJNEjOmRgf8ypWz6ce2m6kWmzCZCplrIaWJ7AtNGmn5Ew==}
     hasBin: true
     peerDependencies:
-      vite: '>=2.8.1'
+      vite: ^2.8.1
     dependencies:
-      '@types/node': 18.0.6
-      '@vavite/multibuild': 1.4.0_vite@3.0.0
+      '@types/node': 17.0.45
+      '@vavite/multibuild': 1.3.3_vite@2.9.14
       cac: 6.7.12
       picocolors: 1.0.0
-      vite: 3.0.0
+      vite: 2.9.14
     dev: false
 
-  /@vavite/multibuild/1.4.0_vite@3.0.0:
-    resolution: {integrity: sha512-XfKnkWGPYipmC5oHi9AYBK4hSga7dspqLqJriVeXIwyH5ubKQke+vCCb5GfMLNhPuLFONSc7ZrvsTS66bvM4wQ==}
+  /@vavite/multibuild/1.3.3_vite@2.9.14:
+    resolution: {integrity: sha512-zFKMWy1dYI2NNInpCDXdMXfsxgScQ+sNJq0qaxs50joPU1s3xZaekERFLp+bLDUClarAgfumYNF9B4sLtsQ1bA==}
     peerDependencies:
-      vite: '>=2.8.1'
+      vite: ^2.8.1
     dependencies:
-      '@types/node': 18.0.6
+      '@types/node': 17.0.45
       cac: 6.7.12
       picocolors: 1.0.0
-      vite: 3.0.0
+      vite: 2.9.14
     dev: false
 
-  /@vavite/reloader/1.4.0_vite@3.0.0:
-    resolution: {integrity: sha512-tf1hsVuO0X7V9tB0PLbwbiwixH+hflcrYb0ge0ehggVsC4+ab5dAqBU0zSqkSi0v44udn1nvSYAFtViK8gbD7g==}
+  /@vavite/reloader/1.3.3_vite@2.9.14:
+    resolution: {integrity: sha512-N9QtFZpknZljDsw7zVvBx3LpGIx4SvK44QJoCaZUql+/6NW5xrQKAVKLMaIKPSIwsaW+SBqzBsTaZNY1SxnLag==}
     peerDependencies:
-      vite: '>=2.8.1'
+      vite: ^2.8.1
     dependencies:
-      vite: 3.0.0
+      vite: 2.9.14
     dev: false
 
-  /@vitejs/plugin-react/2.0.0_vite@3.0.0:
-    resolution: {integrity: sha512-zHkRR+X4zqEPNBbKV2FvWSxK7Q6crjMBVIAYroSU8Nbb4M3E5x4qOiLoqJBHtXgr27kfednXjkwr3lr8jS6Wrw==}
-    engines: {node: '>=14.18.0'}
-    peerDependencies:
-      vite: ^3.0.0
+  /@vitejs/plugin-react/1.3.2:
+    resolution: {integrity: sha512-aurBNmMo0kz1O4qRoY+FM4epSA39y3ShWGuqfLRA/3z0oEJAdtoSfgA3aO98/PCCHAqMaduLxIxErWrVKIFzXA==}
+    engines: {node: '>=12.0.0'}
     dependencies:
       '@babel/core': 7.18.9
       '@babel/plugin-transform-react-jsx': 7.18.6_@babel+core@7.18.9
       '@babel/plugin-transform-react-jsx-development': 7.18.6_@babel+core@7.18.9
       '@babel/plugin-transform-react-jsx-self': 7.18.6_@babel+core@7.18.9
       '@babel/plugin-transform-react-jsx-source': 7.18.6_@babel+core@7.18.9
-      magic-string: 0.26.2
-      react-refresh: 0.14.0
-      vite: 3.0.0
+      '@rollup/pluginutils': 4.2.1
+      react-refresh: 0.13.0
+      resolve: 1.22.1
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1027,6 +1037,10 @@ packages:
     engines: {node: '>=0.8.0'}
     dev: false
 
+  /estree-walker/2.0.2:
+    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
+    dev: false
+
   /etag/1.8.1:
     resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
     engines: {node: '>= 0.6'}
@@ -1484,8 +1498,8 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-refresh/0.14.0:
-    resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
+  /react-refresh/0.13.0:
+    resolution: {integrity: sha512-XP8A9BT0CpRBD+NYLLeIhld/RqG9+gktUjW1FkE+Vm7OCinbG1SshcK5tb9ls4kzvjZr9mOQc7HYgBngEyPAXg==}
     engines: {node: '>=0.10.0'}
     dev: false
 
@@ -1749,17 +1763,17 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /vavite/1.4.0_vite@3.0.0:
-    resolution: {integrity: sha512-1bf+QCdlEd9jsMHoDKjQ1PcaYBE1MjMBsI4X1rXFbWTD8Vb44UvJ94tQ1MR/mE46/ggRfYqauslWlFuWpmEvIg==}
+  /vavite/1.3.3_vite@2.9.14:
+    resolution: {integrity: sha512-7Fg00R2jlNGB6pHvpngTlTddB6WWzrF97qCYgR+hMt5bP7GZ0ikD94SBJH3wUcU7soW1giwgix1FG5Z/SlT7Ww==}
     hasBin: true
     peerDependencies:
-      vite: '>=2.8.1'
+      vite: ^2.8.1
     dependencies:
-      '@vavite/connect': 1.4.0_vite@3.0.0
-      '@vavite/expose-vite-dev-server': 1.4.0_vite@3.0.0
-      '@vavite/multibuild-cli': 1.4.0_vite@3.0.0
-      '@vavite/reloader': 1.4.0_vite@3.0.0
-      vite: 3.0.0
+      '@vavite/connect': 1.3.3_vite@2.9.14
+      '@vavite/expose-vite-dev-server': 1.3.3_vite@2.9.14
+      '@vavite/multibuild-cli': 1.3.3_vite@2.9.14
+      '@vavite/reloader': 1.3.3_vite@2.9.14
+      vite: 2.9.14
     dev: false
 
   /vite-plugin-dist-importer/0.3.2:
@@ -1776,7 +1790,7 @@ packages:
       ufo: 0.8.5
     dev: false
 
-  /vite-plugin-ssr/0.4.11_vite@3.0.0:
+  /vite-plugin-ssr/0.4.11_vite@2.9.14:
     resolution: {integrity: sha512-NfdVW1xSZh6T6TpbEB+yhmxIuA7pJqpyN4kEByCcFZGoXMBl9vQOcwM6NWUmJjNcBAOFfy3hA/s7WJCMiFK41w==}
     engines: {node: '>=12.19.0'}
     hasBin: true
@@ -1794,30 +1808,27 @@ packages:
       picocolors: 1.0.0
       resolve: 1.22.1
       symlink-dir: 5.0.1
-      vite: 3.0.0
+      vite: 2.9.14
       vite-plugin-dist-importer: 0.3.2
       vite-plugin-glob: 0.2.8
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /vite/3.0.0:
-    resolution: {integrity: sha512-M7phQhY3+fRZa0H+1WzI6N+/onruwPTBTMvaj7TzgZ0v2TE+N2sdLKxJOfOv9CckDWt5C4HmyQP81xB4dwRKzA==}
-    engines: {node: '>=14.18.0'}
+  /vite/2.9.14:
+    resolution: {integrity: sha512-P/UCjSpSMcE54r4mPak55hWAZPlyfS369svib/gpmz8/01L822lMPOJ/RYW6tLCe1RPvMvOsJ17erf55bKp4Hw==}
+    engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
       less: '*'
       sass: '*'
       stylus: '*'
-      terser: ^5.4.0
     peerDependenciesMeta:
       less:
         optional: true
       sass:
         optional: true
       stylus:
-        optional: true
-      terser:
         optional: true
     dependencies:
       esbuild: 0.14.49
