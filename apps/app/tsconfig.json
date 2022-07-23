@@ -1,25 +1,11 @@
 {
-    "compilerOptions": {
-        "strict": true,
-        "module": "ES2020",
-        "moduleResolution": "Node",
-        "target": "ES2017",
-        "lib": [
-            "DOM",
-            "DOM.Iterable",
-            "ESNext"
-        ],
-        "types": [
-            "vite/client"
-        ],
-        "jsx": "react-jsx",
-        "skipLibCheck": true,
-        "esModuleInterop": true
-    },
-    "ts-node": {
-        "transpileOnly": true,
-        "compilerOptions": {
-            "module": "CommonJS"
-        }
-    }
+	"compilerOptions": {
+		"strict": true,
+		"module": "ES2020",
+		"moduleResolution": "Node",
+		"target": "ES2017",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"jsx": "react",
+		"esModuleInterop": true
+	}
 }
