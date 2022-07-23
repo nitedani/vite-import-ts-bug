@@ -1,9 +1,10 @@
 {
   "name": "@vavite/example-vite-plugin-ssr",
 
+  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite --open",
+    "dev": "node --loader ts-node/esm node_modules/vite/bin/vite --open",
     "build": "vavite",
     "start": "node dist/server"
   },
