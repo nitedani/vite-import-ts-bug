@@ -1,10 +1,7 @@
 import express from 'express'
 import compression from 'compression'
 import { renderPage } from 'vite-plugin-ssr'
-import fs from 'fs'
-import path from 'path'
-import { fileURLToPath } from 'url'
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
 const isProduction = process.env.NODE_ENV === 'production'
 const root = `${__dirname}/..`
 
